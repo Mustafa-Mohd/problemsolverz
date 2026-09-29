@@ -1,0 +1,24 @@
+{
+  "hotel_name": "Munnar Valley Resort",
+  "voucher_id": "VOUCH-2026-902",
+  "guest_name": "Meera Patel",
+  "stay_dates": "Oct 20 - 23, 2026",
+  "line_items": [
+    {
+      "description": "Deluxe Room",
+      "amount": 24000.0,
+      "category": "ROOM"
+    },
+    {
+      "description": "Room Service Folio #905 (Dinner)",
+      "amount": 4500.0,
+      "category": "MEAL"
+    },
+    {
+      "description": "Kerala Flood Cess",
+      "amount": 1200.0,
+      "category": "FEE"
+    }
+  ],
+  "total_amount": 29700.0
+}

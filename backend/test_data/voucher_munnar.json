@@ -1,0 +1,19 @@
+{
+  "hotel_name": "Munnar Valley Resort",
+  "voucher_id": "VOUCH-2026-901",
+  "guest_name": "Arun Kumar",
+  "stay_dates": "Oct 12 - 15, 2026",
+  "line_items": [
+    {
+      "description": "Deluxe Room (3 Nights)",
+      "amount": 24000.0,
+      "category": "ROOM"
+    },
+    {
+      "description": "MAP Meal Supplement",
+      "amount": 4500.0,
+      "category": "MEAL"
+    }
+  ],
+  "total_amount": 28500.0
+}
