@@ -50,7 +50,7 @@ Document Text:
         
         response = client.chat.completions.create(
             # Using the model suggested in the prompt (or a typical Groq fallback if needed)
-            model="qwen-2.5-32b",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": "You are a precise data extraction API that outputs strictly in JSON format."},
                 {"role": "user", "content": prompt}

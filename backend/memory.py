@@ -9,9 +9,10 @@ logger = logging.getLogger(__name__)
 # Load configuration
 HINDSIGHT_BASE_URL = os.getenv('HINDSIGHT_BASE_URL', 'https://api.hindsight.vectorize.io')
 BANK_ID = os.getenv('HINDSIGHT_BANK_ID')
+HINDSIGHT_API_KEY = os.getenv('HINDSIGHT_API_KEY')
 
 # Initialize Hindsight client
-client = Hindsight(base_url=HINDSIGHT_BASE_URL)
+client = Hindsight(base_url=HINDSIGHT_BASE_URL, api_key=HINDSIGHT_API_KEY)
 
 def recall_vendor_rules(hotel_name: str) -> list[str]:
     """

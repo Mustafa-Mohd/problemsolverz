@@ -65,7 +65,7 @@ Additional Rules:
 """
 
     response = client.chat.completions.create(
-        model="qwen-2.5-32b",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": "You are a precise data reconciliation API that outputs strictly in JSON format."},
             {"role": "user", "content": prompt}
