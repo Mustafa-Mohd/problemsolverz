@@ -18,6 +18,13 @@ def recall_vendor_rules(hotel_name: str) -> list[str]:
     """
     Recall past rules, exceptions, and quirks for a given hotel.
     """
+    # MOCK DATA FOR TESTING THE UI
+    if "Munnar" in hotel_name:
+        return [
+            "Human accountant override for Munnar Valley Resort [Voucher #MV-8821]: The 1200 INR Kerala Flood Cess is a mandatory local tax. Always approve this.",
+            "Human accountant override for Munnar Valley Resort [Voucher #MV-4019]: Room service up to 500 INR is covered under the corporate meal plan."
+        ]
+
     try:
         query = f'What are the past approved exceptions, meal plan mappings, tax quirks, and billing rules for {hotel_name}?'
         results = client.recall(bank_id=BANK_ID, query=query)
